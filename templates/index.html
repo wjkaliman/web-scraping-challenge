@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Weather</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron text-center">
+            <h1>Mission to Mars</h1>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">scrape new data</a></p>
+        </div>
+        <!--This is the start of the body of work-->
+        <!--This is the first row under jumbotron from bootstrap-->
+
+       <!--% for ? in ? %-->
+    </div class="container-fluid">
+        <div class="page-header">
+            <h1>Latest Mars News</h1>
+            <h2>{{mars.news_title}}</h2>
+            <p>{{mars.news_para}}</p>
+            <!--end loop-->
+        </div>
+
+
+        <!--This is the large image-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7">
+                    <h3>Featured Image</h3>
+                    <img src="{{mars.featured_image_url}}" alt="featured image" style="width: 80%;">
+
+                    <!--This is the box to the right of the large image-->
+                    <div class="col-md-5">
+                        <ul>
+                            <h3>Current Mars Weather</h3>
+                            {{mars.mars_weather}}
+                        </ul>
+
+                        <ul>
+                            <h3>Mars Facts</h3>
+                            {{mars.mars_facts}}
+                            <img scr="{{mars_facts}}">
+                        </ul>
+
+                        <div class="container-fluid">
+                            <h3>Mars Hemisphere</h3>
+                            <div class="body">
+                                <div class="row">
+                                    <div class="col-md-6">
+
+                                        {{mars.mars_hemi}}
+                                        <img scr="{{mars_hemi}}">
+                                        </ul>
+                                    </div>
+                                </div>
+</body>
+
+</html>

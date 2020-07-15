@@ -56,7 +56,7 @@ def scrape():
 
 
     # %%
-    more_info = browser.find_link_by_partial_text("more info")
+    more_info =  browser.links.find_by_partial_text ("more info")
     more_info.click()
 
 
@@ -158,12 +158,12 @@ def scrape():
         "news_para":news_p,
         "featured_image_url":featured_image_url,
         "mars_weather":weather,
-        "mars_facts":facts_url[0],
+        "mars_facts": html_table,
         "mars_hemi":mars_hemi
     }
     print(data)
     return data
-    #mars_hemi
+
 
 
 
